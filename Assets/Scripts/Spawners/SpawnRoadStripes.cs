@@ -6,7 +6,6 @@ public class SpawnRoadStripes : MonoBehaviour {
     public float timeBetweenStripes = 1.0f;
     public float stripeSpeed = 1.0f;
     public Transform roadStripePrefab;
-    public Transform cleanupObject;
 
 	// Use this for initialization
 	void Start()
@@ -21,9 +20,9 @@ public class SpawnRoadStripes : MonoBehaviour {
             yield return new WaitForSeconds(timeBetweenStripes);
             Transform roadStripe = (Transform)Instantiate(roadStripePrefab, this.transform.position, Quaternion.identity);
             roadStripe.name = "Road Stripe";
-            roadStripe.rigidbody2D.velocity = new Vector2(0, stripeSpeed);
+            roadStripe.rigidbody.velocity = new Vector3(0, 0, stripeSpeed);
+            roadStripe.transform.parent = transform;
             RoadStripe stripeScript = roadStripe.GetComponent<RoadStripe>();
-            stripeScript.cleanupObject = cleanupObject;
         }
     }
 	

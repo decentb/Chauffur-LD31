@@ -20,7 +20,6 @@ public class CatCarMovement : MonoBehaviour {
 	// Update is called once per frame
 	void Update()
     {
-        Debug.Log("Horizontal Velocity = " + axisX * horizontalSpeed);
         rigidbody2D.velocity = new Vector2(axisX * horizontalSpeed, 0);
     }
 }
