@@ -250,7 +250,58 @@ Transform:
   m_LocalScale: {x: 4.15999985, y: 4.15999985, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+  m_RootOrder: 2
+--- !u!1 &264836428
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 264836429}
+  - 114: {fileID: 264836431}
+  - 114: {fileID: 264836430}
+  m_Layer: 0
+  m_Name: Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &264836429
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 264836428}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
   m_RootOrder: 1
+--- !u!114 &264836430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 264836428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 885112c59e7c4bc4ab25753c8b542c02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &264836431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 264836428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5725cb4846c172644a39210c02f8c267, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &417376041
 GameObject:
   m_ObjectHideFlags: 0
@@ -279,7 +330,7 @@ Transform:
   - {fileID: 2019131303}
   - {fileID: 85991589}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!1 &732643544
 GameObject:
   m_ObjectHideFlags: 0
@@ -326,10 +377,10 @@ Transform:
   m_GameObject: {fileID: 732643544}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 3.53999996, z: -2}
-  m_LocalScale: {x: 2000, y: 300, z: 1}
+  m_LocalScale: {x: 1776, y: 302, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
 --- !u!1 &2019131302
 GameObject:
   m_ObjectHideFlags: 0

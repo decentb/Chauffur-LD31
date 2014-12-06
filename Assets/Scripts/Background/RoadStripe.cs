@@ -31,6 +31,5 @@ public class RoadStripe : MonoBehaviour {
         {
             Destroy(this.gameObject);
         }
-
 	}
 }
