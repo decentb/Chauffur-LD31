@@ -6,7 +6,6 @@ public class EventManager : MonoBehaviour {
 	// Use this for initialization
 	void Start()
     {
-	
 	}
 
     void OnHitEscape()
@@ -18,6 +17,5 @@ public class EventManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update()
     {
-	
 	}
 }
