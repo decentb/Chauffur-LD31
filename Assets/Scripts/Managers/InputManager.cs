@@ -28,8 +28,9 @@ public class InputManager : MonoBehaviour {
         if (Input.mousePresent)
         {
             // Use the mouse position to determine the X axis
-            float mousePosition = Input.mousePosition.x;
-            axisX = mousePosition * mouseSensitivity / (Screen.width / 2);
+            float mousePositionX = Input.mousePosition.x;
+            axisX = (mousePositionX - (Screen.width / 2)) / (Screen.width / 2);
+            axisX *= mouseSensitivity;
         }
         else
         {
