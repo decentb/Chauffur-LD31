@@ -200,6 +200,7 @@ MonoBehaviour:
   timeBetweenStripes: 1
   stripeSpeed: -3
   roadStripePrefab: {fileID: 400000, guid: e879da810f2469e4380f3048c3eaea7a, type: 2}
+  cleanupObject: {fileID: 2019131303}
 --- !u!1 &163641247
 GameObject:
   m_ObjectHideFlags: 0
