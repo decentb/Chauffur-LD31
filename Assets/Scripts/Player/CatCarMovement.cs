@@ -22,9 +22,9 @@ public class CatCarMovement : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        rigidbody2D.velocity = new Vector2(axisX * horizontalSpeed, 0);
+        GetComponent<Rigidbody2D>().velocity = new Vector2(axisX * horizontalSpeed, 0);
 
-        if (rigidbody2D.velocity.x < 0)
+        if (GetComponent<Rigidbody2D>().velocity.x < 0)
         {
             catPaw.gameObject.SetActive(true);
             carDoor.gameObject.SetActive(false);

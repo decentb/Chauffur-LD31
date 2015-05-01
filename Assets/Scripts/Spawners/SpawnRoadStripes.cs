@@ -20,7 +20,7 @@ public class SpawnRoadStripes : MonoBehaviour {
             yield return new WaitForSeconds(timeBetweenStripes);
             Transform roadStripe = (Transform)Instantiate(roadStripePrefab, this.transform.position, Quaternion.identity);
             roadStripe.name = "Road Stripe";
-            roadStripe.rigidbody.velocity = new Vector3(0, 0, stripeSpeed);
+            roadStripe.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, stripeSpeed);
             roadStripe.transform.parent = transform;
             RoadStripe stripeScript = roadStripe.GetComponent<RoadStripe>();
         }
